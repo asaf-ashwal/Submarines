@@ -8,7 +8,7 @@ def empty_board(squer_num):
         new_list.append(tamp_list)
     return new_list
 
-# print(empty_board(4))
+
 
 def secret_board(squer_num):
     new_list = []
@@ -26,15 +26,12 @@ def secret_board(squer_num):
 
 
 
-def board_update(board,condition,location):
+def board_update(game,condition,location):
     if condition:
-        board[location[0]][location[1]] = 'V'
-    else:    board[location[0]][location[1]] = 'X'
-    return board 
+        game['display_board'][location[0]][location[1]] = 'V'
+        game['hits'] += 1
+    else:   
+        game['display_board'][location[0]][location[1]] = 'X'
+        game['shots'] -= 1
+    return game['display_board'] 
     
-# b = [
-#     [0,0,'🚢'],
-#     [0,0,0],
-#     [0,0,0],
-#     ]
-# print(board_update(b,False,[0,2]))
