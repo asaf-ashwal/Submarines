@@ -4,5 +4,4 @@ def is_it_a_ship(location,board):
 
 
 def won(game):
-    print('won: ','hits: ',game['hits'],'len: ',round(len(game['secret_board'])))
     return game['hits'] == round(len(game['secret_board'])) 

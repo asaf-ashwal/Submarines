@@ -9,7 +9,6 @@ def init_game():
         if won(game):
             print('!!!   wonnnnn   !!!')
             break
-            print('out of ammo')
         elif game['shots'] == 0:
             print("You're out of ammunition.")
             break
