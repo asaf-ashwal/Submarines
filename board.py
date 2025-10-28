@@ -22,3 +22,19 @@ def secret_board(squer_num):
             else: tamp_list.append('O')
         new_list.append(tamp_list)
     return new_list
+
+
+
+
+def board_update(board,condition,location):
+    if condition:
+        board[location[0]][location[1]] = 'V'
+    else:    board[location[0]][location[1]] = 'X'
+    return board 
+    
+# b = [
+#     [0,0,'🚢'],
+#     [0,0,0],
+#     [0,0,0],
+#     ]
+# print(board_update(b,False,[0,2]))
