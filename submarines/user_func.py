@@ -1,5 +1,5 @@
-from board import empty_board, secret_board, board_update
-from placement import is_it_a_ship
+from submarines.board import empty_board, secret_board, board_update
+from submarines.placement import is_it_a_ship
 
 
 def get_game():

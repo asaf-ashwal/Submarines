@@ -30,6 +30,8 @@ def board_update(game,condition,location):
     if condition:
         game['display_board'][location[0]][location[1]] = 'V'
         game['hits'] += 1
+        game['shots'] -= 1
+        
     else:   
         game['display_board'][location[0]][location[1]] = 'X'
         game['shots'] -= 1

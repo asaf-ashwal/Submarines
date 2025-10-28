@@ -1,5 +1,5 @@
-from user_func import get_game, user_choic
-from placement import won
+from submarines.user_func import get_game, user_choic
+from submarines.placement import won
 
 def init_game():
     game = get_game()
